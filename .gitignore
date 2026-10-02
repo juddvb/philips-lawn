@@ -39,3 +39,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local env (holds Supabase URL + publishable key; see .env.example)
+.env

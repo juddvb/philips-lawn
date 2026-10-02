@@ -9,7 +9,11 @@ Read these first:
 
 ## Where things are
 
-- `App.tsx`: starter screen. Live growth projection on sample data, with grass type, cut height and mow-at ratio controls. Replace with Expo Router in phase 1.
+- `src/app/`: Expo Router routes. `_layout.tsx` loads fonts and gates on auth with `Stack.Protected`; `sign-in.tsx`, `sign-up.tsx` (role choice); `(app)/(tabs)/` holds Lawn (`index`), Forecast, Book and Pro (Pro tab only for `role = 'pro'`); `(app)/account.tsx` has sign-out.
+- `src/app/(app)/(tabs)/forecast.tsx`: the former starter screen. Live growth projection on sample data, with grass type, cut height and mow-at ratio controls.
+- `src/theme.ts`: design tokens from the prototype (colors, Bricolage Grotesque + Public Sans, radii). `src/components/`: shared UI and tab icons.
+- `src/lib/supabase.ts`, `src/lib/auth.tsx`: Supabase client and `useAuth()`. With no env vars set, the app runs in a local demo mode (pick homeowner or pro, nothing saved).
+- `supabase/migrations/`: SQL schema. `profiles` row is created by a trigger from sign-up metadata; users can't change their own role.
 - `src/lib/growth.ts`: the growth model. Pure TypeScript, no React or network. Keep it that way so it can run in the app and in a backend function.
 - `src/lib/growth.test.ts`: model tests (vitest).
 - `src/lib/sampleData.ts`: sample zones/weather matching the prototype (fictional address; last cut Sep 30, 2026; projects Fri Oct 9).
@@ -21,8 +25,10 @@ npm install
 npm start            # Expo dev server; scan the QR code with Expo Go
 npm test             # model tests
 npm run typecheck
-npx expo lint
+npm run lint
 ```
+
+Supabase: copy `.env.example` to `.env` and fill in the URL and publishable key, then apply `supabase/migrations/` (Supabase CLI `supabase db push`, or paste into the SQL editor).
 
 ## Working rules
 
