@@ -13,7 +13,11 @@ Read these first:
 - `src/app/(app)/(tabs)/forecast.tsx`: the former starter screen. Live growth projection on sample data, with grass type, cut height and mow-at ratio controls.
 - `src/theme.ts`: design tokens from the prototype (colors, Bricolage Grotesque + Public Sans, radii). `src/components/`: shared UI and tab icons.
 - `src/lib/supabase.ts`, `src/lib/auth.tsx`: Supabase client and `useAuth()`. With no env vars set, the app runs in a local demo mode (pick homeowner or pro, nothing saved).
-- `supabase/migrations/`: SQL schema. `profiles` row is created by a trigger from sign-up metadata; users can't change their own role.
+- `src/app/(app)/property/`: add-property flow. `address.tsx` looks up the address (US Census geocoder, free, no key, no autocomplete; blocked by CORS in the web build, so use "Use the sample address" there). `outline.tsx` is the zone editor on a satellite map.
+- `src/components/LawnMap.tsx`: `react-native-maps` satellite map with draggable corners (works in Expo Go without a key; production builds need a Google Maps key via the config plugin). `LawnMap.web.tsx` is a grid-only stand-in for the web build.
+- `src/lib/lawnGeometry.ts` (area/edge length from lat/lng polygons) and `src/lib/mowTime.ts` (minutes by mower type): pure TypeScript like the growth model. Tested in `src/lib/measure.test.ts`; the "8,400 sq ft → push 46 / rider 21 / zero-turn 13 min" test anchors mow time to the prototype.
+- `src/lib/property.tsx`: `useProperty()` loads/saves the user's property and zones (Supabase `save_property` RPC, or device storage in demo mode).
+- `supabase/migrations/`: SQL schema. `profiles` row is created by a trigger from sign-up metadata; users can't change their own role. `properties` + `lawn_zones` store polygons as JSON (move to PostGIS when phase 6 needs spatial queries).
 - `src/lib/growth.ts`: the growth model. Pure TypeScript, no React or network. Keep it that way so it can run in the app and in a backend function.
 - `src/lib/growth.test.ts`: model tests (vitest).
 - `src/lib/sampleData.ts`: sample zones/weather matching the prototype (fictional address; last cut Sep 30, 2026; projects Fri Oct 9).
