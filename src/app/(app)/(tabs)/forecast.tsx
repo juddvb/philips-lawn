@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Card, Chip, Header, Screen } from '../../../components/ui';
-import { GRASS_TYPES, type GrassTypeId, projectGrowth } from '../../../lib/growth';
+import { GRASS_TYPES, type GrassTypeId, type LawnZone, projectGrowth } from '../../../lib/growth';
+import { measure, useProperty } from '../../../lib/property';
 import { SAMPLE_WEATHER, SAMPLE_ZONES } from '../../../lib/sampleData';
 import { colors, fonts, radius, type } from '../../../theme';
 
@@ -13,16 +14,26 @@ const TREND_START = 8;
 
 /**
  * Growth projection on the real model with sample data (the former App.tsx starter).
- * Phase 4 swaps the sample weather and zones for the property's live data.
+ * Uses the saved outline's zones when there is one; phase 4 swaps in live weather.
  */
 export default function ForecastScreen() {
   const [grass, setGrass] = useState<GrassTypeId>('tallFescue');
   const [cut, setCut] = useState(GRASS_TYPES.tallFescue.recommendedCutIn);
   const [ratio, setRatio] = useState(1.5);
+  const { property } = useProperty();
+
+  // The saved outline's zones when there is one. Sun is full until phase 3 measures shade.
+  const zones = useMemo<LawnZone[]>(
+    () =>
+      property?.zones.length
+        ? measure(property.zones).zones.map((m) => ({ name: m.zone.name, areaSqFt: m.areaSqFt, sunFraction: m.zone.sunFraction }))
+        : SAMPLE_ZONES,
+    [property],
+  );
 
   const projection = useMemo(
-    () => projectGrowth({ grass, cutHeightIn: cut, mowAtRatio: ratio, weather: SAMPLE_WEATHER, zones: SAMPLE_ZONES }),
-    [grass, cut, ratio],
+    () => projectGrowth({ grass, cutHeightIn: cut, mowAtRatio: ratio, weather: SAMPLE_WEATHER, zones }),
+    [grass, cut, ratio, zones],
   );
 
   const front = projection.zones[0];
@@ -37,12 +48,12 @@ export default function ForecastScreen() {
     <Screen>
       <Header
         account
-        kicker="Growth projection · last cut Sep 30"
+        kicker={`${property?.zones.length ? 'Your zones' : 'Sample lawn'} · sample weather · last cut Sep 30`}
         title={projection.dueDate ? `Mow by ${formatDate(projection.dueDate)}` : 'No mow needed for 16+ days'}
       />
 
       <Card>
-        <Text style={type.label}>Projected height, front yard (mow at {projection.mowAtHeightIn} in)</Text>
+        <Text style={type.label}>Projected height, {front.zone.name.toLowerCase()} (mow at {projection.mowAtHeightIn} in)</Text>
         <View style={s.chart} accessibilityLabel={`Bar chart of projected height over ${front.heightsIn.length} days`}>
           {front.heightsIn.map((h, i) => (
             <View
