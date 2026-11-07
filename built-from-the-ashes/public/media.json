@@ -1,419 +1,536 @@
 {
-  "generatedAt": "2026-11-07T16:31:50.011Z",
-  "source": "public/media (in place)",
+  "generatedAt": "2026-11-07T16:54:56.885Z",
+  "source": "/tmp/claude-0/-home-user-philips-lawn/328d5694-6741-5c1a-8f95-5af56e23116d/scratchpad/staging2",
   "pools": {
-    "build": 5,
-    "community": 4,
+    "build": 11,
     "crew": 4,
     "early": 3,
-    "fire": 7,
-    "logo": 1,
-    "misc": 1,
-    "roadtrip": 4,
-    "rubble": 4,
-    "rvtv-aftermath": 5,
-    "rvtv-new": 5,
-    "rvtv-old": 5,
-    "shop": 3,
-    "social": 5,
-    "vans": 6
+    "fire": 13,
+    "logo": 2,
+    "roadtrip": 5,
+    "rubble": 2,
+    "rvtv-new": 8,
+    "rvtv-old": 3,
+    "shop": 9,
+    "vans": 26
   },
   "files": [
     {
-      "src": "media/placeholders/build/build-01.svg",
+      "src": "media/build/build-electrical-cabinet.jpg",
       "pool": "build",
       "type": "image",
-      "source": "placeholders/build/build-01.svg"
+      "source": "build/build-electrical-cabinet.jpg"
     },
     {
-      "src": "media/placeholders/build/build-02.svg",
+      "src": "media/build/build-electrical-closeup.jpg",
       "pool": "build",
       "type": "image",
-      "source": "placeholders/build/build-02.svg"
+      "source": "build/build-electrical-closeup.jpg"
     },
     {
-      "src": "media/placeholders/build/build-03.svg",
+      "src": "media/build/build-electrical-victron-apr22.jpg",
       "pool": "build",
       "type": "image",
-      "source": "placeholders/build/build-03.svg"
+      "source": "build/build-electrical-victron-apr22.jpg"
     },
     {
-      "src": "media/placeholders/build/build-04.svg",
+      "src": "media/build/build-sprinter-ramp.jpg",
       "pool": "build",
       "type": "image",
-      "source": "placeholders/build/build-04.svg"
+      "source": "build/build-sprinter-ramp.jpg"
     },
     {
-      "src": "media/placeholders/build/build-05.svg",
-      "pool": "build",
-      "type": "image",
-      "source": "placeholders/build/build-05.svg"
-    },
-    {
-      "src": "media/placeholders/community/community-01.svg",
-      "pool": "community",
-      "type": "image",
-      "source": "placeholders/community/community-01.svg"
-    },
-    {
-      "src": "media/placeholders/community/community-02.svg",
-      "pool": "community",
-      "type": "image",
-      "source": "placeholders/community/community-02.svg"
-    },
-    {
-      "src": "media/placeholders/community/community-03.svg",
-      "pool": "community",
-      "type": "image",
-      "source": "placeholders/community/community-03.svg"
-    },
-    {
-      "src": "media/placeholders/community/community-04.svg",
-      "pool": "community",
-      "type": "image",
-      "source": "placeholders/community/community-04.svg"
-    },
-    {
-      "src": "media/placeholders/crew/crew-01.svg",
+      "src": "media/crew/crew-cam-busy.jpg",
       "pool": "crew",
       "type": "image",
-      "source": "placeholders/crew/crew-01.svg"
+      "source": "crew/crew-cam-busy.jpg"
     },
     {
-      "src": "media/placeholders/crew/crew-02.svg",
+      "src": "media/crew/crew-cam-lift.jpg",
       "pool": "crew",
       "type": "image",
-      "source": "placeholders/crew/crew-02.svg"
+      "source": "crew/crew-cam-lift.jpg"
     },
     {
-      "src": "media/placeholders/crew/crew-03.svg",
+      "src": "media/crew/crew-cam-walk.jpg",
       "pool": "crew",
       "type": "image",
-      "source": "placeholders/crew/crew-03.svg"
+      "source": "crew/crew-cam-walk.jpg"
     },
     {
-      "src": "media/placeholders/crew/crew-04.svg",
+      "src": "media/crew/crew-working-temp-space.jpg",
       "pool": "crew",
       "type": "image",
-      "source": "placeholders/crew/crew-04.svg"
+      "source": "crew/crew-working-temp-space.jpg"
     },
     {
-      "src": "media/placeholders/early/early-01.svg",
+      "src": "media/early/early-sprinter-old-shop-2024.jpeg",
       "pool": "early",
       "type": "image",
-      "source": "placeholders/early/early-01.svg"
+      "source": "early/early-sprinter-old-shop-2024.jpeg"
     },
     {
-      "src": "media/placeholders/early/early-02.svg",
+      "src": "media/early/early-sprinter-shop.jpeg",
       "pool": "early",
       "type": "image",
-      "source": "placeholders/early/early-02.svg"
+      "source": "early/early-sprinter-shop.jpeg"
     },
     {
-      "src": "media/placeholders/early/early-03.svg",
+      "src": "media/early/early-sprinter-shop2.jpg",
       "pool": "early",
       "type": "image",
-      "source": "placeholders/early/early-03.svg"
+      "source": "early/early-sprinter-shop2.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-01.svg",
+      "src": "media/fire/cam01-2243-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-01.svg"
+      "source": "fire/cam01-2243-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-02.svg",
+      "src": "media/fire/cam01-2244-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-02.svg"
+      "source": "fire/cam01-2244-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-03.svg",
+      "src": "media/fire/cam03-2243-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-03.svg"
+      "source": "fire/cam03-2243-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-04.svg",
+      "src": "media/fire/cam07-2243-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-04.svg"
+      "source": "fire/cam07-2243-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-05.svg",
+      "src": "media/fire/cam08-2237-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-05.svg"
+      "source": "fire/cam08-2237-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/fire-06.svg",
+      "src": "media/fire/cam08-2238-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/fire-06.svg"
+      "source": "fire/cam08-2238-smoke.jpg"
     },
     {
-      "src": "media/placeholders/fire/loading-dock-fire.svg",
+      "src": "media/fire/cam08-2240-smoke.jpg",
       "pool": "fire",
       "type": "image",
-      "source": "placeholders/fire/loading-dock-fire.svg"
+      "source": "fire/cam08-2240-smoke.jpg"
     },
     {
-      "src": "media/placeholders/logo/logo-01.svg",
+      "src": "media/fire/cam08-2241-smoke.jpg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/cam08-2241-smoke.jpg"
+    },
+    {
+      "src": "media/fire/cam08-2242-glow.jpg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/cam08-2242-glow.jpg"
+    },
+    {
+      "src": "media/fire/fire-firefighters-glow.jpg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/fire-firefighters-glow.jpg"
+    },
+    {
+      "src": "media/fire/fire-hoses-night.jpg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/fire-hoses-night.jpg"
+    },
+    {
+      "src": "media/fire/fire-smoke-rubble-night.jpeg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/fire-smoke-rubble-night.jpeg"
+    },
+    {
+      "src": "media/fire/loading-dock-fire-front.jpeg",
+      "pool": "fire",
+      "type": "image",
+      "source": "fire/loading-dock-fire-front.jpeg"
+    },
+    {
+      "src": "media/logo/noke-van-co-asset.png",
       "pool": "logo",
       "type": "image",
-      "source": "placeholders/logo/logo-01.svg"
+      "source": "logo/noke-van-co-asset.png"
     },
     {
-      "src": "media/placeholders/misc/misc-01.svg",
-      "pool": "misc",
+      "src": "media/logo/noke-van-co-round.png",
+      "pool": "logo",
       "type": "image",
-      "source": "placeholders/misc/misc-01.svg"
+      "source": "logo/noke-van-co-round.png"
     },
     {
-      "src": "media/placeholders/roadtrip/roadtrip-01.svg",
+      "src": "media/roadtrip/roadtrip-camp-chair.jpg",
       "pool": "roadtrip",
       "type": "image",
-      "source": "placeholders/roadtrip/roadtrip-01.svg"
+      "source": "roadtrip/roadtrip-camp-chair.jpg"
     },
     {
-      "src": "media/placeholders/roadtrip/roadtrip-02.svg",
+      "src": "media/roadtrip/roadtrip-overlook.jpg",
       "pool": "roadtrip",
       "type": "image",
-      "source": "placeholders/roadtrip/roadtrip-02.svg"
+      "source": "roadtrip/roadtrip-overlook.jpg"
     },
     {
-      "src": "media/placeholders/roadtrip/roadtrip-03.svg",
+      "src": "media/roadtrip/roadtrip-overlook2.jpg",
       "pool": "roadtrip",
       "type": "image",
-      "source": "placeholders/roadtrip/roadtrip-03.svg"
+      "source": "roadtrip/roadtrip-overlook2.jpg"
     },
     {
-      "src": "media/placeholders/roadtrip/roadtrip-04.svg",
+      "src": "media/roadtrip/roadtrip-sunset.jpg",
       "pool": "roadtrip",
       "type": "image",
-      "source": "placeholders/roadtrip/roadtrip-04.svg"
+      "source": "roadtrip/roadtrip-sunset.jpg"
     },
     {
-      "src": "media/placeholders/rubble/rubble-01.svg",
+      "src": "media/roadtrip/roadtrip-wrapped-van-field.jpg",
+      "pool": "roadtrip",
+      "type": "image",
+      "source": "roadtrip/roadtrip-wrapped-van-field.jpg"
+    },
+    {
+      "src": "media/rubble/rubble-night-van.jpg",
       "pool": "rubble",
       "type": "image",
-      "source": "placeholders/rubble/rubble-01.svg"
+      "source": "rubble/rubble-night-van.jpg"
     },
     {
-      "src": "media/placeholders/rubble/rubble-02.svg",
+      "src": "media/rubble/rubble-smoke-night.jpeg",
       "pool": "rubble",
       "type": "image",
-      "source": "placeholders/rubble/rubble-02.svg"
+      "source": "rubble/rubble-smoke-night.jpeg"
     },
     {
-      "src": "media/placeholders/rubble/rubble-03.svg",
-      "pool": "rubble",
-      "type": "image",
-      "source": "placeholders/rubble/rubble-03.svg"
-    },
-    {
-      "src": "media/placeholders/rubble/rubble-04.svg",
-      "pool": "rubble",
-      "type": "image",
-      "source": "placeholders/rubble/rubble-04.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-01.svg",
-      "pool": "rvtv-aftermath",
-      "type": "image",
-      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-01.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-02.svg",
-      "pool": "rvtv-aftermath",
-      "type": "image",
-      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-02.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-03.svg",
-      "pool": "rvtv-aftermath",
-      "type": "image",
-      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-03.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-clip-1.mp4",
-      "pool": "rvtv-aftermath",
-      "type": "video",
-      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-clip-1.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-clip-2.mp4",
-      "pool": "rvtv-aftermath",
-      "type": "video",
-      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-clip-2.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/rvtv-new/rvtv-new-01.svg",
-      "pool": "rvtv-new",
-      "type": "image",
-      "source": "placeholders/rvtv-new/rvtv-new-01.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-new/rvtv-new-02.svg",
-      "pool": "rvtv-new",
-      "type": "image",
-      "source": "placeholders/rvtv-new/rvtv-new-02.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-new/rvtv-new-03.svg",
-      "pool": "rvtv-new",
-      "type": "image",
-      "source": "placeholders/rvtv-new/rvtv-new-03.svg"
-    },
-    {
-      "src": "media/placeholders/rvtv-new/rvtv-new-clip-1.mp4",
-      "pool": "rvtv-new",
-      "type": "video",
-      "source": "placeholders/rvtv-new/rvtv-new-clip-1.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/rvtv-new/rvtv-new-clip-2.mp4",
-      "pool": "rvtv-new",
-      "type": "video",
-      "source": "placeholders/rvtv-new/rvtv-new-clip-2.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/rvtv-old/rvtv-old-01.svg",
+      "src": "media/rvtv-old/old-building-exterior-rain.jpg",
       "pool": "rvtv-old",
       "type": "image",
-      "source": "placeholders/rvtv-old/rvtv-old-01.svg"
+      "source": "rvtv-old/old-building-exterior-rain.jpg"
     },
     {
-      "src": "media/placeholders/rvtv-old/rvtv-old-02.svg",
+      "src": "media/rvtv-old/old-building-exterior-vans.jpg",
       "pool": "rvtv-old",
       "type": "image",
-      "source": "placeholders/rvtv-old/rvtv-old-02.svg"
+      "source": "rvtv-old/old-building-exterior-vans.jpg"
     },
     {
-      "src": "media/placeholders/rvtv-old/rvtv-old-03.svg",
+      "src": "media/rvtv-old/old-building-exterior-vans2.jpg",
       "pool": "rvtv-old",
       "type": "image",
-      "source": "placeholders/rvtv-old/rvtv-old-03.svg"
+      "source": "rvtv-old/old-building-exterior-vans2.jpg"
     },
     {
-      "src": "media/placeholders/rvtv-old/rvtv-old-clip-1.mp4",
-      "pool": "rvtv-old",
-      "type": "video",
-      "source": "placeholders/rvtv-old/rvtv-old-clip-1.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/rvtv-old/rvtv-old-clip-2.mp4",
-      "pool": "rvtv-old",
-      "type": "video",
-      "source": "placeholders/rvtv-old/rvtv-old-clip-2.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
-    },
-    {
-      "src": "media/placeholders/shop/shop-01.svg",
+      "src": "media/shop/old-shop-cam-1650.jpg",
       "pool": "shop",
       "type": "image",
-      "source": "placeholders/shop/shop-01.svg"
+      "source": "shop/old-shop-cam-1650.jpg"
     },
     {
-      "src": "media/placeholders/shop/shop-02.svg",
+      "src": "media/shop/old-shop-cam-busy.jpg",
       "pool": "shop",
       "type": "image",
-      "source": "placeholders/shop/shop-02.svg"
+      "source": "shop/old-shop-cam-busy.jpg"
     },
     {
-      "src": "media/placeholders/shop/shop-03.svg",
+      "src": "media/shop/old-shop-cam-lift.jpg",
       "pool": "shop",
       "type": "image",
-      "source": "placeholders/shop/shop-03.svg"
+      "source": "shop/old-shop-cam-lift.jpg"
     },
     {
-      "src": "media/placeholders/social/social-01.svg",
-      "pool": "social",
+      "src": "media/shop/old-shop-cam-overhead.jpg",
+      "pool": "shop",
       "type": "image",
-      "source": "placeholders/social/social-01.svg"
+      "source": "shop/old-shop-cam-overhead.jpg"
     },
     {
-      "src": "media/placeholders/social/social-02.svg",
-      "pool": "social",
+      "src": "media/shop/old-shop-cam-rv.jpg",
+      "pool": "shop",
       "type": "image",
-      "source": "placeholders/social/social-02.svg"
+      "source": "shop/old-shop-cam-rv.jpg"
     },
     {
-      "src": "media/placeholders/social/social-03.svg",
-      "pool": "social",
+      "src": "media/shop/old-shop-cam-rv2.jpg",
+      "pool": "shop",
       "type": "image",
-      "source": "placeholders/social/social-03.svg"
+      "source": "shop/old-shop-cam-rv2.jpg"
     },
     {
-      "src": "media/placeholders/social/social-clip-1.mp4",
-      "pool": "social",
-      "type": "video",
-      "source": "placeholders/social/social-clip-1.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
+      "src": "media/shop/old-shop-cam-tent.jpg",
+      "pool": "shop",
+      "type": "image",
+      "source": "shop/old-shop-cam-tent.jpg"
     },
     {
-      "src": "media/placeholders/social/social-clip-2.mp4",
-      "pool": "social",
-      "type": "video",
-      "source": "placeholders/social/social-clip-2.mp4",
-      "duration": 6,
-      "width": 480,
-      "height": 270
+      "src": "media/shop/old-shop-cam-vans.jpg",
+      "pool": "shop",
+      "type": "image",
+      "source": "shop/old-shop-cam-vans.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-01.svg",
+      "src": "media/shop/old-shop-cam-walk.jpg",
+      "pool": "shop",
+      "type": "image",
+      "source": "shop/old-shop-cam-walk.jpg"
+    },
+    {
+      "src": "media/vans/DSC07510.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07510.jpg"
+    },
+    {
+      "src": "media/vans/DSC07511.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07511.jpg"
+    },
+    {
+      "src": "media/vans/DSC07513.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07513.jpg"
+    },
+    {
+      "src": "media/vans/DSC07517.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07517.jpg"
+    },
+    {
+      "src": "media/vans/DSC07520.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07520.jpg"
+    },
+    {
+      "src": "media/vans/DSC07522.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07522.jpg"
+    },
+    {
+      "src": "media/vans/DSC07529.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07529.jpg"
+    },
+    {
+      "src": "media/vans/DSC07536.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-01.svg"
+      "source": "bianchi/DSC07536.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-02.svg",
+      "src": "media/vans/DSC07537.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-02.svg"
+      "source": "bianchi/DSC07537.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-03.svg",
+      "src": "media/vans/DSC07539.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-03.svg"
+      "source": "bianchi/DSC07539.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-04.svg",
+      "src": "media/vans/DSC07543.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-04.svg"
+      "source": "bianchi/DSC07543.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-05.svg",
+      "src": "media/vans/DSC07545.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-05.svg"
+      "source": "bianchi/DSC07545.jpg"
     },
     {
-      "src": "media/placeholders/vans/vans-06.svg",
+      "src": "media/vans/DSC07549.jpg",
       "pool": "vans",
       "type": "image",
-      "source": "placeholders/vans/vans-06.svg"
+      "source": "bianchi/DSC07549.jpg"
+    },
+    {
+      "src": "media/vans/DSC07550.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07550.jpg"
+    },
+    {
+      "src": "media/vans/DSC07552.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07552.jpg"
+    },
+    {
+      "src": "media/vans/DSC07553.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07553.jpg"
+    },
+    {
+      "src": "media/vans/DSC07555.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07555.jpg"
+    },
+    {
+      "src": "media/vans/DSC07559.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07559.jpg"
+    },
+    {
+      "src": "media/vans/DSC07562.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07562.jpg"
+    },
+    {
+      "src": "media/vans/DSC07567.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "bianchi/DSC07567.jpg"
+    },
+    {
+      "src": "media/vans/DSC07574.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07574.jpg"
+    },
+    {
+      "src": "media/vans/DSC07578.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07578.jpg"
+    },
+    {
+      "src": "media/vans/DSC07583.jpg",
+      "pool": "build",
+      "type": "image",
+      "source": "bianchi/DSC07583.jpg"
+    },
+    {
+      "src": "media/vans/DSC07586.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07586.jpg"
+    },
+    {
+      "src": "media/vans/DSC07592.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07592.jpg"
+    },
+    {
+      "src": "media/vans/DSC07597.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07597.jpg"
+    },
+    {
+      "src": "media/vans/DSC07600.jpg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "bianchi/DSC07600.jpg"
+    },
+    {
+      "src": "media/vans/van-bed-window.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-bed-window.jpg"
+    },
+    {
+      "src": "media/vans/van-blue-sprinter-front.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-blue-sprinter-front.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-bed.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-bed.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-cedar.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-cedar.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-cedar2.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-cedar2.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-cedar3.jpeg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-cedar3.jpeg"
+    },
+    {
+      "src": "media/vans/van-interior-ceiling.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-ceiling.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-dark.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-dark.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-kitchen.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-kitchen.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-lounge.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-lounge.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-sofa.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-sofa.jpg"
+    },
+    {
+      "src": "media/vans/van-interior-sunburst.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-interior-sunburst.jpg"
+    },
+    {
+      "src": "media/vans/van-kitchen-counter.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-kitchen-counter.jpg"
+    },
+    {
+      "src": "media/vans/van-rear-doors.jpg",
+      "pool": "vans",
+      "type": "image",
+      "source": "vans/van-rear-doors.jpg"
     }
-  ]
+  ],
+  "note": "Pools for the Bianchi photoshoot were reassigned by hand (new-building exteriors -> rvtv-new, close-ups -> build). Re-running ingest without --append will undo that."
 }

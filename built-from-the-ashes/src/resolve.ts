@@ -84,6 +84,8 @@ export type Timeline = {
     transition: Transition;
     transitionSeconds: number;
     fallbackPool: string;
+    /** pool name -> other pools to try (in order) when it is empty, before fallbackPool */
+    poolFallbacks?: Record<string, string[]>;
   };
   debugOverlay?: boolean;
   sections: Section[];
@@ -149,15 +151,21 @@ export function resolveEdit(timeline: Timeline, manifest: Manifest): Edit {
   const poolFiles = (name: string): MediaFile[] => {
     const own = byPool.get(name);
     if (own && own.length) return own;
+    const chain = [...(timeline.defaults.poolFallbacks?.[name] ?? []), timeline.defaults.fallbackPool];
+    for (const alt of chain) {
+      const list = byPool.get(alt);
+      if (list && list.length) {
+        if (!warnedPools.has(name)) {
+          warnedPools.add(name);
+          warnings.push(`pool "${name}" has no media; using "${alt}" instead`);
+        }
+        return list;
+      }
+    }
     if (!warnedPools.has(name)) {
       warnedPools.add(name);
-      const fb = byPool.get(timeline.defaults.fallbackPool);
-      warnings.push(
-        `pool "${name}" has no media; using ${fb && fb.length ? `"${timeline.defaults.fallbackPool}"` : "all files"} instead`,
-      );
+      warnings.push(`pool "${name}" has no media; using all files instead`);
     }
-    const fb = byPool.get(timeline.defaults.fallbackPool);
-    if (fb && fb.length) return fb;
     return files;
   };
 

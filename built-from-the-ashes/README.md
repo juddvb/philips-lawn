@@ -83,7 +83,9 @@ my-media/
   logo/noke-van-co.png
 ```
 
-Then `npm run ingest -- "C:\path\to\my-media"`. The script prints where each file landed and lists anything
+Then `npm run ingest -- "C:\path\to\my-media"`. Add `--append` to add to what is already there instead of
+starting over, and `--pool <name>` to force every file in that folder into one pool (handy for a Drive folder
+whose name means nothing to the script). The script prints where each file landed and lists anything
 that fell into `misc`; fix those by renaming/moving the file and re-running, or by editing `"pool"` in
 `public/media.json`. Videos become 720p H.264 proxies (silent) so iPhone HEVC clips play in the Studio and
 render fast; pass `--no-proxy` to keep originals.
@@ -129,6 +131,12 @@ Section-level `"beatPunch": true` adds a scale/brightness hit on every beat (use
 ```
 
 `logo` and `endcard` use the first image in the `logo` pool when there is one; otherwise a typographic wordmark.
+
+### Empty pools
+
+`defaults.poolFallbacks` says what to use while a pool is still empty, e.g. `"rvtv-aftermath": ["rubble", "fire"]`.
+`npm run timeline:check` prints a warning for every substitution so you know what is still missing.
+`docs/drive-sources.md` lists what was pulled from Google Drive and what still needs to be downloaded by hand.
 
 ### Beat grid
 

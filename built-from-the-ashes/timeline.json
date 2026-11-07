@@ -15,7 +15,17 @@
     "kenBurns": 1.12,
     "transition": "cut",
     "transitionSeconds": 1.0,
-    "fallbackPool": "misc"
+    "fallbackPool": "misc",
+    "poolFallbacks": {
+      "rvtv-old": ["shop"],
+      "rvtv-aftermath": ["rubble", "fire"],
+      "rvtv-new": ["build", "vans"],
+      "community": ["crew", "shop"],
+      "early": ["shop", "vans"],
+      "social": ["vans", "roadtrip"],
+      "rubble": ["fire"],
+      "misc": ["vans"]
+    }
   },
   "debugOverlay": true,
   "sections": [

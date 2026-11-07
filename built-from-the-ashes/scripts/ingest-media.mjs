@@ -4,7 +4,9 @@
  *
  *   node scripts/ingest-media.mjs <folder>        copy + convert everything from <folder> into public/media/
  *   node scripts/ingest-media.mjs                  scan public/media/ in place (convert HEIC, write manifest)
- *   options: --no-proxy   keep original video files instead of making 720p H.264 proxies
+ *   options: --no-proxy      keep original video files instead of making 720p H.264 proxies
+ *            --append        add to public/media/ instead of clearing it first
+ *            --pool <name>   put every file from <folder> into this pool (skips folder/file-name guessing)
  *
  * Pool = the nearest folder name that matches a pool keyword, else a keyword in the file name, else "misc".
  * See POOLS in media-lib.mjs. You can also just edit the "pool" field in public/media.json afterwards.
@@ -19,7 +21,9 @@ import { IMAGE_EXT, VIDEO_EXT, MANIFEST, MEDIA_DIR, PUBLIC, findFfmpeg, guessPoo
 const require = createRequire(import.meta.url);
 const args = process.argv.slice(2);
 const noProxy = args.includes("--no-proxy");
-const source = args.find((a) => !a.startsWith("--"));
+const append = args.includes("--append");
+const forcedPool = args.includes("--pool") ? args[args.indexOf("--pool") + 1] : null;
+const source = args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--pool")[0];
 const ffmpeg = findFfmpeg();
 
 const safeName = (s) => s.replace(/[^A-Za-z0-9._-]+/g, "_");
@@ -47,16 +51,18 @@ async function main() {
   if (source) {
     const srcDir = path.resolve(source);
     if (!fs.existsSync(srcDir)) throw new Error(`folder not found: ${srcDir}`);
-    // public/media is derived output; clear everything except the committed placeholders.
-    for (const entry of fs.readdirSync(MEDIA_DIR)) {
-      if (entry === "placeholders" || entry === "README.md") continue;
-      fs.rmSync(path.join(MEDIA_DIR, entry), { recursive: true, force: true });
+    // public/media is derived output; clear everything except the committed placeholders (unless --append).
+    if (!append) {
+      for (const entry of fs.readdirSync(MEDIA_DIR)) {
+        if (entry === "placeholders" || entry === "README.md") continue;
+        fs.rmSync(path.join(MEDIA_DIR, entry), { recursive: true, force: true });
+      }
     }
     for (const file of walk(srcDir)) {
       const rel = path.relative(srcDir, file);
       const ext = path.extname(file).toLowerCase();
       if (!IMAGE_EXT.has(ext) && !VIDEO_EXT.has(ext)) continue;
-      const pool = guessPool(rel);
+      const pool = forcedPool ?? guessPool(rel);
       const base = safeName(path.parse(file).name);
       let destName;
       if (ext === ".heic" || ext === ".heif") destName = `${base}.jpg`;
@@ -76,6 +82,16 @@ async function main() {
         }
       } else fs.copyFileSync(file, dest);
       inputs.push({ file: dest, pool, source: toPosix(rel) });
+    }
+    if (append) {
+      // Pick up what was already in public/media from earlier runs.
+      const have = new Set(inputs.map((i) => i.file));
+      for (const file of walk(MEDIA_DIR)) {
+        const rel = path.relative(MEDIA_DIR, file);
+        const ext = path.extname(file).toLowerCase();
+        if (have.has(file) || (!IMAGE_EXT.has(ext) && !VIDEO_EXT.has(ext)) || rel.split(path.sep)[0] === "placeholders") continue;
+        inputs.push({ file, pool: guessPool(rel), source: toPosix(rel) });
+      }
     }
   } else {
     // In-place scan. Convert HEIC next to the original (original is kept but not listed).

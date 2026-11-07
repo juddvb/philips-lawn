@@ -10,7 +10,7 @@
     "final": "remotion render BuiltFromTheAshes out/final-1080p.mp4 --width 1920 --height 1080 --crf 18 --log=warn",
     "ingest": "node scripts/ingest-media.mjs",
     "placeholders": "node scripts/make-placeholders.mjs",
-    "timeline:check": "node scripts/check-timeline.mjs",
+    "timeline:check": "node --no-warnings scripts/check-timeline.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
