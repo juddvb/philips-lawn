@@ -1,0 +1,29 @@
+{
+  "name": "built-from-the-ashes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rough-cut music video preview for \"Built From The Ashes\" (Noke Van Co.), built with Remotion.",
+  "scripts": {
+    "start": "remotion studio",
+    "preview": "remotion render BuiltFromTheAshes out/preview-720p.mp4 --crf 28 --jpeg-quality 70 --log=warn",
+    "preview:fast": "remotion render BuiltFromTheAshes out/preview-720p.mp4 --crf 32 --jpeg-quality 50 --scale 0.5 --log=warn",
+    "final": "remotion render BuiltFromTheAshes out/final-1080p.mp4 --width 1920 --height 1080 --crf 18 --log=warn",
+    "ingest": "node scripts/ingest-media.mjs",
+    "placeholders": "node scripts/make-placeholders.mjs",
+    "timeline:check": "node scripts/check-timeline.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "@remotion/renderer": "4.0.541",
+    "heic-convert": "^2.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.541"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

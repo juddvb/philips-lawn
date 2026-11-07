@@ -1,0 +1,419 @@
+{
+  "generatedAt": "2026-11-07T16:31:50.011Z",
+  "source": "public/media (in place)",
+  "pools": {
+    "build": 5,
+    "community": 4,
+    "crew": 4,
+    "early": 3,
+    "fire": 7,
+    "logo": 1,
+    "misc": 1,
+    "roadtrip": 4,
+    "rubble": 4,
+    "rvtv-aftermath": 5,
+    "rvtv-new": 5,
+    "rvtv-old": 5,
+    "shop": 3,
+    "social": 5,
+    "vans": 6
+  },
+  "files": [
+    {
+      "src": "media/placeholders/build/build-01.svg",
+      "pool": "build",
+      "type": "image",
+      "source": "placeholders/build/build-01.svg"
+    },
+    {
+      "src": "media/placeholders/build/build-02.svg",
+      "pool": "build",
+      "type": "image",
+      "source": "placeholders/build/build-02.svg"
+    },
+    {
+      "src": "media/placeholders/build/build-03.svg",
+      "pool": "build",
+      "type": "image",
+      "source": "placeholders/build/build-03.svg"
+    },
+    {
+      "src": "media/placeholders/build/build-04.svg",
+      "pool": "build",
+      "type": "image",
+      "source": "placeholders/build/build-04.svg"
+    },
+    {
+      "src": "media/placeholders/build/build-05.svg",
+      "pool": "build",
+      "type": "image",
+      "source": "placeholders/build/build-05.svg"
+    },
+    {
+      "src": "media/placeholders/community/community-01.svg",
+      "pool": "community",
+      "type": "image",
+      "source": "placeholders/community/community-01.svg"
+    },
+    {
+      "src": "media/placeholders/community/community-02.svg",
+      "pool": "community",
+      "type": "image",
+      "source": "placeholders/community/community-02.svg"
+    },
+    {
+      "src": "media/placeholders/community/community-03.svg",
+      "pool": "community",
+      "type": "image",
+      "source": "placeholders/community/community-03.svg"
+    },
+    {
+      "src": "media/placeholders/community/community-04.svg",
+      "pool": "community",
+      "type": "image",
+      "source": "placeholders/community/community-04.svg"
+    },
+    {
+      "src": "media/placeholders/crew/crew-01.svg",
+      "pool": "crew",
+      "type": "image",
+      "source": "placeholders/crew/crew-01.svg"
+    },
+    {
+      "src": "media/placeholders/crew/crew-02.svg",
+      "pool": "crew",
+      "type": "image",
+      "source": "placeholders/crew/crew-02.svg"
+    },
+    {
+      "src": "media/placeholders/crew/crew-03.svg",
+      "pool": "crew",
+      "type": "image",
+      "source": "placeholders/crew/crew-03.svg"
+    },
+    {
+      "src": "media/placeholders/crew/crew-04.svg",
+      "pool": "crew",
+      "type": "image",
+      "source": "placeholders/crew/crew-04.svg"
+    },
+    {
+      "src": "media/placeholders/early/early-01.svg",
+      "pool": "early",
+      "type": "image",
+      "source": "placeholders/early/early-01.svg"
+    },
+    {
+      "src": "media/placeholders/early/early-02.svg",
+      "pool": "early",
+      "type": "image",
+      "source": "placeholders/early/early-02.svg"
+    },
+    {
+      "src": "media/placeholders/early/early-03.svg",
+      "pool": "early",
+      "type": "image",
+      "source": "placeholders/early/early-03.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-01.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-01.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-02.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-02.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-03.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-03.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-04.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-04.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-05.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-05.svg"
+    },
+    {
+      "src": "media/placeholders/fire/fire-06.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/fire-06.svg"
+    },
+    {
+      "src": "media/placeholders/fire/loading-dock-fire.svg",
+      "pool": "fire",
+      "type": "image",
+      "source": "placeholders/fire/loading-dock-fire.svg"
+    },
+    {
+      "src": "media/placeholders/logo/logo-01.svg",
+      "pool": "logo",
+      "type": "image",
+      "source": "placeholders/logo/logo-01.svg"
+    },
+    {
+      "src": "media/placeholders/misc/misc-01.svg",
+      "pool": "misc",
+      "type": "image",
+      "source": "placeholders/misc/misc-01.svg"
+    },
+    {
+      "src": "media/placeholders/roadtrip/roadtrip-01.svg",
+      "pool": "roadtrip",
+      "type": "image",
+      "source": "placeholders/roadtrip/roadtrip-01.svg"
+    },
+    {
+      "src": "media/placeholders/roadtrip/roadtrip-02.svg",
+      "pool": "roadtrip",
+      "type": "image",
+      "source": "placeholders/roadtrip/roadtrip-02.svg"
+    },
+    {
+      "src": "media/placeholders/roadtrip/roadtrip-03.svg",
+      "pool": "roadtrip",
+      "type": "image",
+      "source": "placeholders/roadtrip/roadtrip-03.svg"
+    },
+    {
+      "src": "media/placeholders/roadtrip/roadtrip-04.svg",
+      "pool": "roadtrip",
+      "type": "image",
+      "source": "placeholders/roadtrip/roadtrip-04.svg"
+    },
+    {
+      "src": "media/placeholders/rubble/rubble-01.svg",
+      "pool": "rubble",
+      "type": "image",
+      "source": "placeholders/rubble/rubble-01.svg"
+    },
+    {
+      "src": "media/placeholders/rubble/rubble-02.svg",
+      "pool": "rubble",
+      "type": "image",
+      "source": "placeholders/rubble/rubble-02.svg"
+    },
+    {
+      "src": "media/placeholders/rubble/rubble-03.svg",
+      "pool": "rubble",
+      "type": "image",
+      "source": "placeholders/rubble/rubble-03.svg"
+    },
+    {
+      "src": "media/placeholders/rubble/rubble-04.svg",
+      "pool": "rubble",
+      "type": "image",
+      "source": "placeholders/rubble/rubble-04.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-01.svg",
+      "pool": "rvtv-aftermath",
+      "type": "image",
+      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-01.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-02.svg",
+      "pool": "rvtv-aftermath",
+      "type": "image",
+      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-02.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-03.svg",
+      "pool": "rvtv-aftermath",
+      "type": "image",
+      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-03.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-clip-1.mp4",
+      "pool": "rvtv-aftermath",
+      "type": "video",
+      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-clip-1.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/rvtv-aftermath/rvtv-aftermath-clip-2.mp4",
+      "pool": "rvtv-aftermath",
+      "type": "video",
+      "source": "placeholders/rvtv-aftermath/rvtv-aftermath-clip-2.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/rvtv-new/rvtv-new-01.svg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "placeholders/rvtv-new/rvtv-new-01.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-new/rvtv-new-02.svg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "placeholders/rvtv-new/rvtv-new-02.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-new/rvtv-new-03.svg",
+      "pool": "rvtv-new",
+      "type": "image",
+      "source": "placeholders/rvtv-new/rvtv-new-03.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-new/rvtv-new-clip-1.mp4",
+      "pool": "rvtv-new",
+      "type": "video",
+      "source": "placeholders/rvtv-new/rvtv-new-clip-1.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/rvtv-new/rvtv-new-clip-2.mp4",
+      "pool": "rvtv-new",
+      "type": "video",
+      "source": "placeholders/rvtv-new/rvtv-new-clip-2.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/rvtv-old/rvtv-old-01.svg",
+      "pool": "rvtv-old",
+      "type": "image",
+      "source": "placeholders/rvtv-old/rvtv-old-01.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-old/rvtv-old-02.svg",
+      "pool": "rvtv-old",
+      "type": "image",
+      "source": "placeholders/rvtv-old/rvtv-old-02.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-old/rvtv-old-03.svg",
+      "pool": "rvtv-old",
+      "type": "image",
+      "source": "placeholders/rvtv-old/rvtv-old-03.svg"
+    },
+    {
+      "src": "media/placeholders/rvtv-old/rvtv-old-clip-1.mp4",
+      "pool": "rvtv-old",
+      "type": "video",
+      "source": "placeholders/rvtv-old/rvtv-old-clip-1.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/rvtv-old/rvtv-old-clip-2.mp4",
+      "pool": "rvtv-old",
+      "type": "video",
+      "source": "placeholders/rvtv-old/rvtv-old-clip-2.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/shop/shop-01.svg",
+      "pool": "shop",
+      "type": "image",
+      "source": "placeholders/shop/shop-01.svg"
+    },
+    {
+      "src": "media/placeholders/shop/shop-02.svg",
+      "pool": "shop",
+      "type": "image",
+      "source": "placeholders/shop/shop-02.svg"
+    },
+    {
+      "src": "media/placeholders/shop/shop-03.svg",
+      "pool": "shop",
+      "type": "image",
+      "source": "placeholders/shop/shop-03.svg"
+    },
+    {
+      "src": "media/placeholders/social/social-01.svg",
+      "pool": "social",
+      "type": "image",
+      "source": "placeholders/social/social-01.svg"
+    },
+    {
+      "src": "media/placeholders/social/social-02.svg",
+      "pool": "social",
+      "type": "image",
+      "source": "placeholders/social/social-02.svg"
+    },
+    {
+      "src": "media/placeholders/social/social-03.svg",
+      "pool": "social",
+      "type": "image",
+      "source": "placeholders/social/social-03.svg"
+    },
+    {
+      "src": "media/placeholders/social/social-clip-1.mp4",
+      "pool": "social",
+      "type": "video",
+      "source": "placeholders/social/social-clip-1.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/social/social-clip-2.mp4",
+      "pool": "social",
+      "type": "video",
+      "source": "placeholders/social/social-clip-2.mp4",
+      "duration": 6,
+      "width": 480,
+      "height": 270
+    },
+    {
+      "src": "media/placeholders/vans/vans-01.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-01.svg"
+    },
+    {
+      "src": "media/placeholders/vans/vans-02.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-02.svg"
+    },
+    {
+      "src": "media/placeholders/vans/vans-03.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-03.svg"
+    },
+    {
+      "src": "media/placeholders/vans/vans-04.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-04.svg"
+    },
+    {
+      "src": "media/placeholders/vans/vans-05.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-05.svg"
+    },
+    {
+      "src": "media/placeholders/vans/vans-06.svg",
+      "pool": "vans",
+      "type": "image",
+      "source": "placeholders/vans/vans-06.svg"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+out/
+.remotion/
+# Real media is ingested here and is too large for git. Placeholders are kept.
+public/media/*
+!public/media/placeholders/
+!public/media/README.md
