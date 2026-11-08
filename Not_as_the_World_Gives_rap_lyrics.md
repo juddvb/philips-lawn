@@ -2,7 +2,7 @@
 
 Based on Dave Sloop's October 25, 2026 sermon on John 14:25-31, Church of the Holy Spirit, Roanoke.
 Formatted for Suno. Paste everything below the line into the lyrics box.
-Suggested style prompt: "conscious hip hop, gospel rap, warm piano and choir pads, 90 bpm, deep male vocal, cinematic"
+Suggested style prompt (paste in the Style box, not the lyrics box): "aggressive rap, rapid-fire multisyllabic flow, nasal sharp male vocal, dark cinematic piano, hard-hitting boom bap drums, 88 bpm, intense, confrontational delivery, sung anthemic chorus"
 
 ---
 
@@ -30,7 +30,7 @@ Fix your circumstances, or forget 'em with a click
 Six episodes deep, scrollin', pourin' three
 "What am I doin'?" Tryin' to forget my life so I can breathe
 
-[Chorus]
+[Chorus - sung, anthemic]
 Peace I leave with you, my peace I give
 Not as the world gives, not how the world lives
 Let not your heart be troubled, don't let it stay
@@ -58,7 +58,7 @@ He knows it all is comin' and His peace is still protected
 So at peace He's worried 'bout their fear instead of His
 Not freedom from the pain, it's peace inside of it
 
-[Chorus]
+[Chorus - sung, anthemic]
 Peace I leave with you, my peace I give
 Not as the world gives, not how the world lives
 Let not your heart be troubled, don't let it stay
@@ -96,7 +96,7 @@ And I was born at war with Him, hostile in my heart
 Colossians one and twenty, peace by the blood of His cross
 He made peace with God for me, so lay your weapons down
 
-[Chorus]
+[Chorus - sung, anthemic]
 Peace I leave with you, my peace I give
 Not as the world gives, not how the world lives
 Let not your heart be troubled, don't let it stay
