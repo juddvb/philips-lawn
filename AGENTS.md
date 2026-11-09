@@ -65,3 +65,4 @@ Before writing code that touches an Expo, EAS or React Native API: read the majo
 - One branch per session (`claude/<topic>`). Never push to `main`. Do not open a pull request unless asked.
 - Stage files by name (`git add <path>`), never `git add -A`. Commit messages carry no model names.
 - Do not create planning or summary documents beyond what the task names.
+- Model per role: the lead decides and integrates on Opus; builders run on Sonnet; critics on Haiku, or on Codex where the repository has `tools/codex.js`; Fable only for a piece that has beaten Opus twice. The lead passes the model to each agent it spawns.
