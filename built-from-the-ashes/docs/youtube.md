@@ -35,17 +35,17 @@ Everything below is ready to paste. Items in **[brackets]** need your real value
 ## Description
 
 ```
-On April 4, 2025, a fire took our entire shop in Roanoke, Virginia. Every tool, every van in progress, everything we owned. Twenty-six business days later the crew was back on the floor with tools in their hands.
+On the night of April 4, 2025, a fire took our entire shop in Roanoke, Virginia. Every tool, every van in progress, everything we owned. Twenty-six business days later, on May 14, we reopened at 1009 Industry Circle in the Riverdale complex with every employee still on the payroll.
 
-This is that story. Security-camera footage from the night of the fire, the photos we took standing in the rubble, and the vans we have built since.
+This is that story. The photos we took while the building burned, the rubble the next morning, and the vans we have built since.
 
-Thank you to the Roanoke Valley. Every shirt, every dollar, every hand that was raised gave us one more reason to fight another day.
+Thank you to the Roanoke Valley. Every shirt, every dollar, every hand that was raised gave us one more reason to fight another day. Thank you to the Riverdale team, the City of Roanoke, and the friends and local businesses who donated tools, paint, furniture, and time, and to everyone who gave to the GoFundMe that kept our crew paid.
 
 You can burn down a building. You can't burn down a dream.
 
 — Noke Van Co. | Built for your adventure
 Custom camper vans, built in Roanoke, VA
-Website: [https://nokevanco.com]
+Website: https://www.nokevanco.com
 Instagram: [@nokevanco]
 Call or text: [855-NOKEVAN]
 Book a build consult: [link]
@@ -64,7 +64,7 @@ CHAPTERS
 
 CREDITS
 Song: "Built From The Ashes" — written for Noke Van Co. [produced with Suno]
-Security camera footage, fire and rebuild photos: Noke Van Co.
+Fire and rebuild photos: Noke Van Co.
 Van photography: [JPG Agency / photographer name]
 News footage: [RVTV, used with permission]
 Edited with Remotion
@@ -73,6 +73,7 @@ Edited with Remotion
 ```
 
 Notes on the description:
+- Facts above come from the May 14, 2025 press release in your Drive ("Noke Van Co Reopens in New Location Just 26 Business Days After Devastating Fire"). The release dates the fire April 5; the song says April fourth. The fire started late on the night of April 4, so the description says "the night of April 4".
 - The first two lines show in search results and above the fold. Keep the fire date and "26 business days" there.
 - Chapters only work if the list starts at 0:00, has at least three entries, and each is 10 s or longer. The list above matches the section starts in `timeline.json`. If you move a section boundary, update the matching line.
 - Delete the Suno line if you would rather not mention it, but keep it in your own records.

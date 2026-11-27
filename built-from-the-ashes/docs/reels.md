@@ -24,7 +24,7 @@ Keep the first line short. On Instagram and TikTok only the first line shows bef
 ```
 They said it was over.
 
-On April 4, 2025 a fire took our whole shop. This is the first 35 seconds of the story we made about what happened next. Full video on YouTube, link in bio.
+On the night of April 4, 2025 a fire took our whole shop. This is the first 35 seconds of the story we made about what happened next. Full video on YouTube, link in bio.
 
 #NokeVanCo #BuiltFromTheAshes #VanLife #CamperVan #Roanoke #SmallBusiness #Comeback #Sprinter #VanBuild
 ```
