@@ -11,7 +11,8 @@
     "ingest": "node scripts/ingest-media.mjs",
     "placeholders": "node scripts/make-placeholders.mjs",
     "timeline:check": "node --no-warnings scripts/check-timeline.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "reels": "node scripts/render-reels.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.541",

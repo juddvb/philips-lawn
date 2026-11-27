@@ -17,14 +17,35 @@
     "transitionSeconds": 1.0,
     "fallbackPool": "misc",
     "poolFallbacks": {
-      "rvtv-old": ["shop"],
-      "rvtv-aftermath": ["rubble", "fire"],
-      "rvtv-new": ["build", "vans"],
-      "community": ["crew", "shop"],
-      "early": ["shop", "vans"],
-      "social": ["vans", "roadtrip"],
-      "rubble": ["fire"],
-      "misc": ["vans"]
+      "rvtv-old": [
+        "shop"
+      ],
+      "rvtv-aftermath": [
+        "rubble",
+        "fire"
+      ],
+      "rvtv-new": [
+        "build",
+        "vans"
+      ],
+      "community": [
+        "crew",
+        "shop"
+      ],
+      "early": [
+        "shop",
+        "vans"
+      ],
+      "social": [
+        "vans",
+        "roadtrip"
+      ],
+      "rubble": [
+        "fire"
+      ],
+      "misc": [
+        "vans"
+      ]
     }
   },
   "debugOverlay": true,
@@ -35,12 +56,41 @@
       "start": 0,
       "end": 34.83,
       "shots": [
-        { "pool": "rvtv-old", "until": 12.06, "beatsPerCut": 8, "transition": "dissolve", "transitionSeconds": 1.5, "note": "old building; 'They said it was over'" },
-        { "match": "loading-dock", "pool": "fire", "until": 20.0, "effect": "zoomIn", "kenBurns": 1.18, "note": "HARD CUT on 'But you can burn down a building'" },
-        { "pool": ["fire", "shop", "vans"], "until": 34.83, "beatsPerCut": 2, "note": "teaser cuts under the logo until the verse drops" }
+        {
+          "pool": "rvtv-old",
+          "until": 12.06,
+          "beatsPerCut": 8,
+          "transition": "dissolve",
+          "transitionSeconds": 1.5,
+          "note": "old building; 'They said it was over'"
+        },
+        {
+          "match": "loading-dock",
+          "pool": "fire",
+          "until": 20.0,
+          "effect": "zoomIn",
+          "kenBurns": 1.18,
+          "note": "HARD CUT on 'But you can burn down a building'"
+        },
+        {
+          "pool": [
+            "fire",
+            "shop",
+            "vans"
+          ],
+          "until": 34.83,
+          "beatsPerCut": 2,
+          "note": "teaser cuts under the logo until the verse drops"
+        }
       ],
       "overlays": [
-        { "type": "logo", "at": 20.0, "duration": 8.5, "style": "hit", "note": "on 'Let's go!'" }
+        {
+          "type": "logo",
+          "at": 20.0,
+          "duration": 8.5,
+          "style": "hit",
+          "note": "on 'Let's go!'"
+        }
       ]
     },
     {
@@ -49,58 +99,154 @@
       "start": 34.83,
       "end": 74.09,
       "shots": [
-        { "pool": "shop", "until": 44.26, "beatsPerCut": 4, "note": "old shop" },
-        { "pool": "early", "until": 54.0, "beatsPerCut": 4, "note": "early builds" },
-        { "pool": "crew", "until": 63.84, "beatsPerCut": 4, "note": "crew / precision" },
-        { "pool": "roadtrip", "until": 74.09, "beatsPerCut": 4, "note": "road trips / highways calling" }
+        {
+          "pool": "shop",
+          "until": 44.26,
+          "beatsPerCut": 4,
+          "note": "old shop"
+        },
+        {
+          "pool": "early",
+          "until": 54.0,
+          "beatsPerCut": 4,
+          "note": "early builds"
+        },
+        {
+          "pool": "crew",
+          "until": 63.84,
+          "beatsPerCut": 4,
+          "note": "crew / precision"
+        },
+        {
+          "pool": "roadtrip",
+          "until": 74.09,
+          "beatsPerCut": 4,
+          "note": "road trips / highways calling"
+        }
       ]
     },
     {
       "id": "chorus1",
       "label": "Chorus",
       "start": 74.09,
-      "end": 93.70,
+      "end": 93.7,
       "beatPunch": true,
       "shots": [
-        { "pool": ["vans", "crew", "logo"], "beatsPerCut": 1, "kenBurns": 1.08 }
+        {
+          "pool": [
+            "vans",
+            "crew",
+            "logo"
+          ],
+          "beatsPerCut": 1,
+          "kenBurns": 1.08
+        }
       ]
     },
     {
       "id": "verse2",
       "label": "Verse 2",
-      "start": 93.70,
+      "start": 93.7,
       "end": 148.74,
       "shots": [
-        { "pool": "fire", "until": 103.70, "beatsPerCut": 4, "note": "'the sky turned black' — night fire photos" },
-        { "pool": "rubble", "until": 113.50, "beatsPerCut": 4, "note": "daytime rubble; insurance, bills" },
-        { "pool": "rvtv-aftermath", "until": 123.48, "beatsPerCut": 8, "note": "news aftermath; 'kept the whole crew paid'" },
-        { "pool": ["build", "crew"], "until": 133.47, "beatsPerCut": 2, "note": "counter runs here; 'crew on the floor, tools back in their hands'" },
-        { "pool": "community", "until": 143.60, "beatsPerCut": 4, "note": "'the hometown showed up'" },
-        { "pool": ["fire", "crew"], "until": 148.74, "beatsPerCut": 2, "note": "'Phoenix in the valley'" }
+        {
+          "pool": "fire",
+          "until": 103.7,
+          "beatsPerCut": 4,
+          "note": "'the sky turned black' — night fire photos"
+        },
+        {
+          "pool": "rubble",
+          "until": 113.5,
+          "beatsPerCut": 4,
+          "note": "daytime rubble; insurance, bills"
+        },
+        {
+          "pool": "rvtv-aftermath",
+          "until": 123.48,
+          "beatsPerCut": 8,
+          "note": "news aftermath; 'kept the whole crew paid'"
+        },
+        {
+          "pool": [
+            "build",
+            "crew"
+          ],
+          "until": 133.47,
+          "beatsPerCut": 2,
+          "note": "counter runs here; 'crew on the floor, tools back in their hands'"
+        },
+        {
+          "pool": "community",
+          "until": 143.6,
+          "beatsPerCut": 4,
+          "note": "'the hometown showed up'"
+        },
+        {
+          "pool": [
+            "fire",
+            "crew"
+          ],
+          "until": 148.74,
+          "beatsPerCut": 2,
+          "note": "'Phoenix in the valley'"
+        }
       ],
       "overlays": [
-        { "type": "counter", "at": 123.48, "duration": 2.5, "from": 1, "to": 26, "label": "BUSINESS DAYS", "hold": 2.5, "note": "'Twenty-six business days! Yeah, count that back!'" }
+        {
+          "type": "counter",
+          "at": 123.48,
+          "duration": 2.5,
+          "from": 1,
+          "to": 26,
+          "label": "BUSINESS DAYS",
+          "hold": 2.5,
+          "note": "'Twenty-six business days! Yeah, count that back!'"
+        }
       ]
     },
     {
       "id": "chorus2",
       "label": "Chorus",
       "start": 148.74,
-      "end": 168.70,
+      "end": 168.7,
       "beatPunch": true,
       "shots": [
-        { "pool": ["vans", "crew", "logo"], "beatsPerCut": 1, "kenBurns": 1.08 }
+        {
+          "pool": [
+            "vans",
+            "crew",
+            "logo"
+          ],
+          "beatsPerCut": 1,
+          "kenBurns": 1.08
+        }
       ]
     },
     {
       "id": "verse3",
       "label": "Verse 3",
-      "start": 168.70,
+      "start": 168.7,
       "end": 218.22,
       "shots": [
-        { "pool": "rvtv-new", "until": 180.0, "beatsPerCut": 8, "note": "new building" },
-        { "pool": "build", "until": 205.0, "beatsPerCut": 4, "note": "build close-ups: insulation, wiring, cabinetry" },
-        { "pool": "vans", "until": 218.22, "beatsPerCut": 4, "note": "finished vans; 'fed the flame'" }
+        {
+          "pool": "rvtv-new",
+          "until": 180.0,
+          "beatsPerCut": 8,
+          "note": "new building"
+        },
+        {
+          "pool": "build",
+          "until": 205.0,
+          "beatsPerCut": 4,
+          "note": "build close-ups: insulation, wiring, cabinetry"
+        },
+        {
+          "pool": "vans",
+          "until": 218.22,
+          "beatsPerCut": 4,
+          "note": "finished vans; 'fed the flame'"
+        }
       ]
     },
     {
@@ -109,10 +255,27 @@
       "start": 218.22,
       "end": 243.23,
       "shots": [
-        { "pool": ["roadtrip", "vans", "crew"], "beatsPerCut": 12, "transition": "dissolve", "transitionSeconds": 1.5, "kenBurns": 1.06, "note": "slow, emotional" }
+        {
+          "pool": [
+            "roadtrip",
+            "vans",
+            "crew"
+          ],
+          "beatsPerCut": 12,
+          "transition": "dissolve",
+          "transitionSeconds": 1.5,
+          "kenBurns": 1.06,
+          "note": "slow, emotional"
+        }
       ],
       "overlays": [
-        { "type": "text", "at": 236.66, "duration": 6.3, "text": "Someday is a decision.", "style": "quiet" }
+        {
+          "type": "text",
+          "at": 236.66,
+          "duration": 6.3,
+          "text": "Someday is a decision.",
+          "style": "quiet"
+        }
       ]
     },
     {
@@ -122,7 +285,17 @@
       "end": 265.22,
       "beatPunch": true,
       "shots": [
-        { "pool": ["vans", "crew", "logo", "build", "roadtrip"], "beatsPerCut": 1, "kenBurns": 1.08 }
+        {
+          "pool": [
+            "vans",
+            "crew",
+            "logo",
+            "build",
+            "roadtrip"
+          ],
+          "beatsPerCut": 1,
+          "kenBurns": 1.08
+        }
       ]
     },
     {
@@ -131,14 +304,78 @@
       "start": 265.22,
       "end": 291.21,
       "shots": [
-        { "pool": "fire", "until": 272.18, "beatsPerCut": 8, "transition": "dissolve", "transitionSeconds": 1.5, "note": "'They tried to put out the fire'" },
-        { "pool": "rvtv-new", "until": 291.21, "beatsPerCut": 16, "transition": "dissolve", "transitionSeconds": 3.0, "note": "fire dissolves into the new building" }
+        {
+          "pool": "fire",
+          "until": 272.18,
+          "beatsPerCut": 8,
+          "transition": "dissolve",
+          "transitionSeconds": 1.5,
+          "note": "'They tried to put out the fire'"
+        },
+        {
+          "pool": "rvtv-new",
+          "until": 291.21,
+          "beatsPerCut": 16,
+          "transition": "dissolve",
+          "transitionSeconds": 3.0,
+          "note": "fire dissolves into the new building"
+        }
       ],
       "overlays": [
-        { "type": "text", "at": 272.18, "duration": 4.7, "text": "The fire was never in the building.", "style": "quiet" },
-        { "type": "text", "at": 275.94, "duration": 1.6, "text": "It was in us.", "style": "quiet" },
-        { "type": "endcard", "at": 277.6, "duration": 13.6, "title": "Noke Van Co.", "subtitle": "Live your adventure", "fadeIn": 1.5 }
+        {
+          "type": "text",
+          "at": 272.18,
+          "duration": 4.7,
+          "text": "The fire was never in the building.",
+          "style": "quiet"
+        },
+        {
+          "type": "text",
+          "at": 275.94,
+          "duration": 1.6,
+          "text": "It was in us.",
+          "style": "quiet"
+        },
+        {
+          "type": "endcard",
+          "at": 277.6,
+          "duration": 13.6,
+          "title": "Noke Van Co.",
+          "subtitle": "Live your adventure",
+          "fadeIn": 1.5
+        }
       ]
+    }
+  ],
+  "cutdownsComment": "Vertical 1080x1920 cuts for Reels / TikTok / Shorts. Times are song seconds. Render all with `npm run reels`, or one with `npx remotion render ReelChorus out/reels/chorus.mp4`. Keep each under 90 s for Reels, 60 s for Shorts.",
+  "cutdowns": [
+    {
+      "id": "ReelHook",
+      "label": "Hook: 'They said it was over' → fire → logo",
+      "start": 0.0,
+      "end": 34.83,
+      "fadeOut": 1.0
+    },
+    {
+      "id": "ReelChorus",
+      "label": "Chorus, beat cuts",
+      "start": 74.09,
+      "end": 93.7,
+      "fadeOut": 1.0
+    },
+    {
+      "id": "Reel26Days",
+      "label": "'Kept the whole crew paid' → 26 business days → 'watch the whole crew rise'",
+      "start": 118.55,
+      "end": 148.74,
+      "fadeOut": 1.2
+    },
+    {
+      "id": "ReelSomeday",
+      "label": "'Someday is a decision' → final chorus",
+      "start": 233.0,
+      "end": 265.22,
+      "fadeOut": 1.5
     }
   ]
 }

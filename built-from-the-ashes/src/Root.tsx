@@ -6,6 +6,7 @@ import { loadEdit } from "./timeline";
 export const Root: React.FC = () => {
   const edit = loadEdit();
   return (
+    <>
     <Composition
       id="BuiltFromTheAshes"
       component={MusicVideo}
@@ -14,5 +15,18 @@ export const Root: React.FC = () => {
       width={edit.timeline.width}
       height={edit.timeline.height}
     />
+      {(edit.timeline.cutdowns ?? []).map((c) => (
+        <Composition
+          key={c.id}
+          id={c.id}
+          component={MusicVideo}
+          durationInFrames={Math.round((c.end - c.start) * edit.timeline.fps)}
+          fps={edit.timeline.fps}
+          width={1080}
+          height={1920}
+          defaultProps={{ clip: { start: c.start, end: c.end, fadeOut: c.fadeOut ?? 1 }, hideDebug: true }}
+        />
+      ))}
+    </>
   );
 };

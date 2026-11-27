@@ -89,6 +89,16 @@ export type Timeline = {
   };
   debugOverlay?: boolean;
   sections: Section[];
+  /** Vertical short cuts rendered as their own compositions. */
+  cutdowns?: Cutdown[];
+};
+
+export type Cutdown = {
+  id: string;
+  label?: string;
+  start: number;
+  end: number;
+  fadeOut?: number; // seconds of audio fade + fade to black at the end
 };
 
 export type Shot = {
