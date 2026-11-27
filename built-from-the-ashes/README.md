@@ -157,7 +157,12 @@ the Reels. This slices the same four clips out of that file with ffmpeg, center-
 npm run reels:from -- "C:\Users\you\Downloads\Built From The Ashes.mp4"
 npm run reels:from -- video.mp4 --offset 2.5     # if the song starts 2.5 s into the video
 npm run reels:from -- video.mp4 --pan 0.3        # crop window: 0 left edge, 0.5 center, 1 right edge
+npm run reels:from -- video.mp4 --fit blur       # keep the whole frame; blurred copy fills top and bottom
+npm run reels:from -- video.mp4 --fit black      # keep the whole frame on black bars
 ```
+
+Use `--fit blur` when the finished video has wide on-screen text (the counter, "Someday is a decision"), because a
+center crop clips the edges of it.
 
 Output goes to `out/reels-from-video/`. Cut points come from `cutdowns` in `timeline.json`. With a full ffmpeg
 installed (`winget install Gyan.FFmpeg`) each clip fades out over its last second; with only the bundled one
