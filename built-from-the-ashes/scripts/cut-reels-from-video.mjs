@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+/**
+ * Cut the four vertical Reels out of an already-finished 16:9 music video (no Remotion involved).
+ *
+ *   npm run reels:from -- "C:\Users\you\Downloads\Built From The Ashes.mp4"
+ *   npm run reels:from -- video.mp4 --offset 2.5      # song starts 2.5 s into the video
+ *   npm run reels:from -- video.mp4 --only ReelHook    # one clip
+ *   npm run reels:from -- video.mp4 --pan 0.5          # 0 = crop from left edge, 0.5 = center (default), 1 = right
+ *
+ * Uses the cutdowns in timeline.json (song-time in/out + fadeOut) and the ffmpeg that ships with Remotion,
+ * so it works on Windows without installing anything else. Output: out/reels-from-video/<id>.mp4, 1080x1920.
+ */
+import fs from "node:fs";
+import path from "node:path";
+import { spawnSync } from "node:child_process";
+import { ROOT, findFfmpeg } from "./media-lib.mjs";
+
+const args = process.argv.slice(2);
+const src = args.find((a) => !a.startsWith("--") && args[args.indexOf(a) - 1] !== "--offset" && args[args.indexOf(a) - 1] !== "--only" && args[args.indexOf(a) - 1] !== "--pan");
+const opt = (name, def) => (args.includes(name) ? args[args.indexOf(name) + 1] : def);
+const offset = parseFloat(opt("--offset", "0"));
+const only = opt("--only", null);
+const pan = Math.min(1, Math.max(0, parseFloat(opt("--pan", "0.5"))));
+
+if (!src || !fs.existsSync(src)) {
+  console.error("usage: node scripts/cut-reels-from-video.mjs <finished-video.mp4> [--offset seconds] [--only ReelId] [--pan 0..1]");
+  process.exit(1);
+}
+// Prefer a full ffmpeg on PATH (has fade filters); Remotion's bundled build is trimmed and may lack them.
+const candidates = [];
+const which = spawnSync(process.platform === "win32" ? "where" : "which", ["ffmpeg"], { encoding: "utf8" });
+if (which.status === 0) candidates.push(...which.stdout.split(/\r?\n/).map((l) => l.trim()).filter(Boolean));
+const bundled = findFfmpeg();
+if (bundled) candidates.push(bundled);
+const hasFade = (bin) => /\bfade\b/.test(spawnSync(bin, ["-hide_banner", "-filters"], { encoding: "utf8" }).stdout || "");
+let ffmpeg = candidates.find(hasFade) ?? candidates[0];
+if (!ffmpeg) { console.error("ffmpeg not found (run npm install first)"); process.exit(1); }
+const canFade = hasFade(ffmpeg);
+if (!canFade) console.log("note: this ffmpeg has no fade filter; clips will end on a hard cut. Install ffmpeg (winget install Gyan.FFmpeg) for the 1 s fade-out.");
+
+const timeline = JSON.parse(fs.readFileSync(path.join(ROOT, "timeline.json"), "utf8"));
+const cuts = (timeline.cutdowns ?? []).filter((c) => !only || c.id === only);
+const outDir = path.join(ROOT, "out", "reels-from-video");
+fs.mkdirSync(outDir, { recursive: true });
+
+for (const c of cuts) {
+  const start = c.start + offset;
+  const len = c.end - c.start;
+  const fade = c.fadeOut ?? 1;
+  const out = path.join(outDir, `${c.id}.mp4`);
+  // Crop a 9:16 window out of the source height, pan across it, scale to 1080x1920, fade picture + audio at the end.
+  const vf = [
+    `crop=ih*9/16:ih:(iw-ih*9/16)*${pan}:0`,
+    "scale=1080:1920:flags=lanczos",
+    ...(canFade ? [`fade=t=out:st=${(len - fade).toFixed(3)}:d=${fade}`] : []),
+    "format=yuv420p",
+  ].join(",");
+  const af = canFade ? `afade=t=out:st=${(len - fade).toFixed(3)}:d=${fade}` : "anull";
+  console.log(`\n== ${c.id}  ${start.toFixed(2)}s → ${(start + len).toFixed(2)}s  (${len.toFixed(1)} s)  ${c.label ?? ""}`);
+  const r = spawnSync(
+    ffmpeg,
+    ["-y", "-v", "error", "-ss", start.toFixed(3), "-i", src, "-t", len.toFixed(3), "-vf", vf, "-af", af,
+     "-r", "30", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out],
+    { stdio: "inherit" },
+  );
+  if (r.status !== 0) process.exit(r.status ?? 1);
+  console.log(`   -> ${path.relative(process.cwd(), out)}  ${(fs.statSync(out).size / 1e6).toFixed(1)} MB`);
+}
+console.log("\nDone. Check each clip on a phone; if the song starts later in the video, re-run with --offset <seconds>.");

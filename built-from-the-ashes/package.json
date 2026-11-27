@@ -12,7 +12,8 @@
     "placeholders": "node scripts/make-placeholders.mjs",
     "timeline:check": "node --no-warnings scripts/check-timeline.mjs",
     "typecheck": "tsc --noEmit",
-    "reels": "node scripts/render-reels.mjs"
+    "reels": "node scripts/render-reels.mjs",
+    "reels:from": "node scripts/cut-reels-from-video.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.541",

@@ -148,6 +148,21 @@ nudge `firstBeat` by ±0.1 s. Detected beats are listed in `public/analysis.json
 `"debugOverlay": true` prints section, song time, shot number and file name in the corner of every frame so
 you can say "swap #72". Set it to `false` for the real render.
 
+## Cutting the Reels from a finished video instead
+
+If you already have a finished 16:9 cut (from HeyGen, Runway, an editor), you do not need Remotion to make
+the Reels. This slices the same four clips out of that file with ffmpeg, center-cropped to 9:16:
+
+```
+npm run reels:from -- "C:\Users\you\Downloads\Built From The Ashes.mp4"
+npm run reels:from -- video.mp4 --offset 2.5     # if the song starts 2.5 s into the video
+npm run reels:from -- video.mp4 --pan 0.3        # crop window: 0 left edge, 0.5 center, 1 right edge
+```
+
+Output goes to `out/reels-from-video/`. Cut points come from `cutdowns` in `timeline.json`. With a full ffmpeg
+installed (`winget install Gyan.FFmpeg`) each clip fades out over its last second; with only the bundled one
+it ends on a hard cut.
+
 ## Re-rendering
 
 ```
