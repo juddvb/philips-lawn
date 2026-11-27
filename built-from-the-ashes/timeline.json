@@ -48,7 +48,7 @@
       ]
     }
   },
-  "debugOverlay": true,
+  "debugOverlay": false,
   "sections": [
     {
       "id": "intro",
