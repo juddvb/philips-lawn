@@ -3,15 +3,14 @@
   "source": "/tmp/claude-0/-home-user-philips-lawn/328d5694-6741-5c1a-8f95-5af56e23116d/scratchpad/staging2",
   "pools": {
     "build": 11,
-    "crew": 4,
+    "crew": 1,
     "early": 3,
-    "fire": 13,
+    "fire": 4,
     "logo": 2,
     "roadtrip": 5,
     "rubble": 2,
     "rvtv-new": 8,
     "rvtv-old": 3,
-    "shop": 9,
     "vans": 26
   },
   "files": [
@@ -40,24 +39,6 @@
       "source": "build/build-sprinter-ramp.jpg"
     },
     {
-      "src": "media/crew/crew-cam-busy.jpg",
-      "pool": "crew",
-      "type": "image",
-      "source": "crew/crew-cam-busy.jpg"
-    },
-    {
-      "src": "media/crew/crew-cam-lift.jpg",
-      "pool": "crew",
-      "type": "image",
-      "source": "crew/crew-cam-lift.jpg"
-    },
-    {
-      "src": "media/crew/crew-cam-walk.jpg",
-      "pool": "crew",
-      "type": "image",
-      "source": "crew/crew-cam-walk.jpg"
-    },
-    {
       "src": "media/crew/crew-working-temp-space.jpg",
       "pool": "crew",
       "type": "image",
@@ -80,60 +61,6 @@
       "pool": "early",
       "type": "image",
       "source": "early/early-sprinter-shop2.jpg"
-    },
-    {
-      "src": "media/fire/cam01-2243-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam01-2243-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam01-2244-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam01-2244-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam03-2243-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam03-2243-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam07-2243-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam07-2243-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam08-2237-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam08-2237-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam08-2238-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam08-2238-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam08-2240-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam08-2240-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam08-2241-smoke.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam08-2241-smoke.jpg"
-    },
-    {
-      "src": "media/fire/cam08-2242-glow.jpg",
-      "pool": "fire",
-      "type": "image",
-      "source": "fire/cam08-2242-glow.jpg"
     },
     {
       "src": "media/fire/fire-firefighters-glow.jpg",
@@ -230,60 +157,6 @@
       "pool": "rvtv-old",
       "type": "image",
       "source": "rvtv-old/old-building-exterior-vans2.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-1650.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-1650.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-busy.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-busy.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-lift.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-lift.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-overhead.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-overhead.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-rv.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-rv.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-rv2.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-rv2.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-tent.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-tent.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-vans.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-vans.jpg"
-    },
-    {
-      "src": "media/shop/old-shop-cam-walk.jpg",
-      "pool": "shop",
-      "type": "image",
-      "source": "shop/old-shop-cam-walk.jpg"
     },
     {
       "src": "media/vans/DSC07510.jpg",
@@ -532,5 +405,5 @@
       "source": "vans/van-rear-doors.jpg"
     }
   ],
-  "note": "Pools for the Bianchi photoshoot were reassigned by hand (new-building exteriors -> rvtv-new, close-ups -> build). Re-running ingest without --append will undo that."
+  "note": "Pools for the Bianchi photoshoot were reassigned by hand (new-building exteriors -> rvtv-new, close-ups -> build). Re-running ingest without --append will undo that. Security-camera frames (cam*, old-shop-cam-*, crew-cam-*) were removed on 2026-11-27 at Justin's request; do not re-ingest them."
 }

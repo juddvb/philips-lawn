@@ -45,6 +45,17 @@
       ],
       "misc": [
         "vans"
+      ],
+      "shop": [
+        "early",
+        "rvtv-old"
+      ],
+      "crew": [
+        "early",
+        "vans"
+      ],
+      "fire": [
+        "rubble"
       ]
     }
   },
@@ -75,7 +86,7 @@
         {
           "pool": [
             "fire",
-            "shop",
+            "early",
             "vans"
           ],
           "until": 34.83,
@@ -135,8 +146,11 @@
         {
           "pool": [
             "vans",
+            "build",
+            "logo",
+            "vans",
             "crew",
-            "logo"
+            "roadtrip"
           ],
           "beatsPerCut": 1,
           "kenBurns": 1.08
@@ -215,8 +229,11 @@
         {
           "pool": [
             "vans",
+            "build",
+            "logo",
+            "vans",
             "crew",
-            "logo"
+            "roadtrip"
           ],
           "beatsPerCut": 1,
           "kenBurns": 1.08
@@ -288,10 +305,11 @@
         {
           "pool": [
             "vans",
-            "crew",
-            "logo",
             "build",
-            "roadtrip"
+            "logo",
+            "roadtrip",
+            "vans",
+            "crew"
           ],
           "beatsPerCut": 1,
           "kenBurns": 1.08

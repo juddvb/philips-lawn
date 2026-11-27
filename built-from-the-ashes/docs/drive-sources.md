@@ -9,7 +9,7 @@ so the items under "Not pulled" need to be downloaded on your computer and inges
 
 | Drive folder | What it is | Pool | Files |
 | --- | --- | --- | --- |
-| My Drive › **Warehouse** (uploaded Apr 8 2025) | Security-camera frames from the night of the fire (04-04-2025, 22:37–22:44) and daytime frames of the old shop from earlier that day | `fire`, `shop`, `crew` | IMG_3648, 3677–3681, 3704–3708 (night); IMG_3687–3695 (day) |
+| My Drive › **Warehouse** (uploaded Apr 8 2025) | Security-camera frames from the night of the fire and of the old shop that day. **Removed from the edit on 2026-11-27 at Justin's request; do not re-ingest.** | — | IMG_3648–3708 |
 | My Drive root (uploaded Jun 16–19 2025) | Phone photos of the fire: building front in flames, firefighters, night rubble | `fire`, `rubble` | IMG_6463 (**loading-dock hard cut**), IMG_3647, 3650, 3651, 6445 |
 | My Drive root (Jun 2025) | Van interiors, electrical close-ups, crew in temporary space | `vans`, `build`, `crew` | IMG_3622, 3628, 3639, 5447, 5451, 5613, 5639, 5967, 0553, 2927, 2929, 1240, IMG_20250422_103148 |
 | My Drive › **New folder** (May 16 2025) | Vans outside the old brick building, road-trip shots, interiors | `rvtv-old` (stand-in), `roadtrip`, `vans`, `early` | IMG_0997, 0999, 3460, 2110, 2157, 2846, 2219, 3644, 0342, 0783, 0789, 2222, 5966, 72496060433…, Vanphotos 2-14-24-7 |
